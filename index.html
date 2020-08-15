@@ -26,6 +26,10 @@
       #title{
           font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       }
+      .section{
+          padding-top:4vw;
+          padding-bottom:4vw;
+      }
   </style>
 </head>
 <body>
@@ -96,12 +100,57 @@
 </section>
 
   <!-- parallax -->
+<div class="parallax-container">
+    <div class="parallax">
+        <img src="img/street.jpg" alt="img not found" class="responsive-img">
+    </div>
+</div>
 
   <!-- services / tabs -->
+<section class="container section" id="services">
+    <div class="row">
+        <div class="col s12 l4">
+            <h2 class="indigo-text text-darken-3">What We Do ?</h2>
+            <p class="grey-text text-lighten-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ullamcorper tristique enim at fermentum. Etiam interdum dui ut metus mollis vehicula. </p>
+            <p class="grey-text text-lighten-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ullamcorper tristique enim at fermentum. Etiam interdum dui ut metus mollis vehicula. </p>
+        </div>
+
+        <div class="col s12 l6 offset-l2">
+            
+                <ul class="tabs">
+                        <li class="tab col s6">
+                                <a href="#Photogarphy" class="indigo-text text-darken-5 ">Photography</a>
+                            </li>
+                            <li class="tab col s6">
+                                <a href=" #Editing" class="indigo-text text-darken-5">Editing</a>
+                            </li>
+                </ul>
+            
+            <div class="col s12" id="Photography">
+                <p class="flow-text grey-lighten-3 indigo-text text-lighten-2" >PHOTOGRAPHY</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ullamcorper tristique enim at fermentum. Etiam interdum dui ut metus mollis vehicula.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ullamcorper tristique enim at fermentum. Etiam interdum dui ut metus mollis vehicula.</p>
+            </div>
+            <div class="col s12"  id="Editing">
+                    <p class="flow-text grey-lighten-3 indigo-text text-lighten-2">EDITING</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ullamcorper tristique enim at fermentum. Etiam interdum dui ut metus mollis vehicula.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ullamcorper tristique enim at fermentum. Etiam interdum dui ut metus mollis vehicula.</p>
+                </div>
+            
+        </div>
+    </div>
+</section>
 
   <!-- parallax -->
+  <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/stars.jpg" alt="img not found" class="responsive-img">
+        </div>
+    </div>
+
 
   <!-- contact form -->
+
 
   <!-- footer -->
 
@@ -113,6 +162,8 @@
     $(document).ready(function(){
         $('.sidenav').sidenav();
         $('.materialboxed').materialbox();
+        $('.parallax').parallax();
+        $('.tabs').tabs();
     });
   </script>
 </body>
