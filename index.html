@@ -44,14 +44,17 @@
                     </a>
                     
                     <ul class="hide-on-med-and-down  right">
-                        <li><a href="#">Photo</a></li>
-                        <li><a href="#">Service</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#photos">Photos</a></li>
+                        <li><a href="#services">Service</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href='#' class="tooltipped btn-floating btn-small indigo " data-tooltip="Instagram"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href='#' class="tooltipped btn-floating btn-small indigo" data-tooltip="Facebook"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href='#' class="tooltipped btn-floating btn-small indigo " data-tooltip="Pinterest"><i class="fab fa-pinterest"></i></a></li>
                     </ul>
                     <ul class="sidenav grey lighten-2 "  id="mobile-menu">
-                            <li><a href="#">Photo</a></li>
-                            <li><a href="#">Service</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#photos">Photos</a></li>
+                            <li><a href="#services">Service</a></li>
+                            <li><a href="#contact">Contact</a></li>
                     </ul>
 
                 </div>
@@ -59,7 +62,7 @@
 </header>
 
   <!-- photo / grid -->
-<section class="container section" id="photo's">
+<section class="container section scrollspy" id="photos">
         <div class="row">
                 <div class="col s12 l4"> 
                     <img src="img/portrait.jpg" alt="cant find" class="responsive-img materialboxed z-depth-2">
@@ -107,7 +110,7 @@
 </div>
 
   <!-- services / tabs -->
-<section class="container section" id="services">
+<section class="container section scrollspy" id="services">
     <div class="row">
         <div class="col s12 l4">
             <h2 class="indigo-text text-darken-3">What We Do ?</h2>
@@ -150,7 +153,7 @@
 
 
   <!-- contact form -->
-    <section class="section container" id="contact">
+    <section class="section container scrollspy" id="contact">
         <div class="row">
             <div class="col l5 s12">
                 <h2 class="indigo-text text darken-4">Get in Touch</h2>
@@ -259,6 +262,8 @@
         $('.datepicker').datepicker({
             disableWeekends:true
         });
+        $('.tooltipped').tooltip();
+        $('.scrollspy').scrollSpy();
     });
   </script>
 </body>
